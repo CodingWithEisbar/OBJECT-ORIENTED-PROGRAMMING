@@ -1,0 +1,3 @@
+what new?
+- Cấp phát tên bằng mảng con trỏ.
+- Có phương thức tự hủy (Destruction)(chạy khi kết thúc chương trình).
