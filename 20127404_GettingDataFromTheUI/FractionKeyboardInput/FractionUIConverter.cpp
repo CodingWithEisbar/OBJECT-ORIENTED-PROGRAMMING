@@ -85,9 +85,10 @@ tuple<bool, int, string, Fraction> FractionToStringDataConverter::convertBack(st
     string message = "";
     Fraction frac;
 
-    bool isValid = isValidFormat(value);
-    if (isValid) {
-        succeeded = true;
+    int isValid = isValidFormat(value);
+    if (isValid == 1) {
+
+        //Trường hợp phân số
         size_t slashIndex = value.find_first_of("/");
         string numString = value.substr(0, slashIndex);
         string denString = value.substr(slashIndex + 1, value.length() - slashIndex);
@@ -96,6 +97,30 @@ tuple<bool, int, string, Fraction> FractionToStringDataConverter::convertBack(st
         long long den = get<3>(converter.convertBack(denString));
         frac.setNum(num);
         frac.setDen(den);
+    }
+    else if (isValid == 2) {
+        //Trường hợp hỗn số
+        size_t spaceIndex = value.find_first_of(" ");
+        string wholeNumString = value.substr(0, spaceIndex);
+        size_t slashIndex = value.find_first_of("/");
+        string numString = value.substr(slashIndex - spaceIndex, slashIndex);
+        string denString = value.substr(slashIndex + 1, value.length() - slashIndex);
+        IntegerToStringUIConverter converter;
+        long long wholeNum = get<3>(converter.convertBack(wholeNumString));
+        long long num = get<3>(converter.convertBack(numString));
+        long long den = get<3>(converter.convertBack(denString));
+
+        //Chuyển đổi từ hỗn số sang phân số thường
+        num = (wholeNum * den) + num;
+        frac.setNum(num);
+        frac.setDen(den);
+    }
+    else if (isValid == 3) {
+        //Trường hợp số nguyên bình thường
+        IntegerToStringUIConverter converter;
+        long long num = get<3>(converter.convertBack(value));
+        frac.setNum(num);
+        frac.setDen(1);
     }
     else
     {
@@ -110,8 +135,10 @@ tuple<bool, int, string, Fraction> FractionToStringDataConverter::convertBack(st
 bool FractionToStringDataConverter::tryConvertBack(string value, Fraction& f) 
 {
     bool result = true;
-    bool isValid = isValidFormat(value);
-    if (isValid) {
+    int isValid = isValidFormat(value);
+    if (isValid == 1) {
+       
+        //Trường hợp phân số
         size_t slashIndex = value.find_first_of("/");
         string numString = value.substr(0, slashIndex);
         string denString = value.substr(slashIndex + 1, value.length() - slashIndex);
@@ -121,18 +148,58 @@ bool FractionToStringDataConverter::tryConvertBack(string value, Fraction& f)
         f.setNum(num);
         f.setDen(den);
     }
+    else if (isValid == 2) {
+        //Trường hợp hỗn số
+        size_t spaceIndex = value.find_first_of(" ");
+        string wholeNumString = value.substr(0, spaceIndex);
+        value = value.substr(spaceIndex + 1, value.size() - 1);
+        size_t slashIndex = value.find_first_of("/");
+        string numString = value.substr(0, slashIndex);
+        string denString = value.substr(slashIndex + 1, value.length() - slashIndex);
+       /* string numString = value.substr(slashIndex - spaceIndex, slashIndex);
+        string denString = value.substr(slashIndex + 1, value.length() - slashIndex);*/
+        IntegerToStringUIConverter converter;
+        long long wholeNum = get<3>(converter.convertBack(wholeNumString));
+        long long num = get<3>(converter.convertBack(numString));
+        long long den = get<3>(converter.convertBack(denString));
+
+        //Chuyển đổi từ hỗn số sang phân số thường
+        num = (wholeNum * den) + num;
+        f.setNum(num);
+        f.setDen(den);
+    }
+    else if (isValid == 3) {
+        //Trường hợp số nguyên bình thường
+        IntegerToStringUIConverter converter;
+        long long num = get<3>(converter.convertBack(value));
+        f.setNum(num);
+        f.setDen(1);
+    }
     else {
         result = false;
     }
     return result;
 }
 
-bool FractionToStringDataConverter::isValidFormat(string value) {
-    bool res = true;
-    //Kiểm tra hỗn số: \b\d+\s\d+\/[1-9][0-9]*\b
-    //Kiểm tra số bình thường: 
-    string pattern = "\\b\\d+\\/[1-9][0-9]*\\b";
-    regex fractionPattern(pattern);
-    res = regex_match(value, fractionPattern);
-    return res;
+int FractionToStringDataConverter::isValidFormat(string value) {
+    bool check_01, check_02, check_03;
+    string pattern_01 = "\\b\\d+\\/[1-9][0-9]*\\b";
+    regex fractionPattern_01(pattern_01);
+    check_01 = regex_match(value, fractionPattern_01);
+    if (check_01 == true) {
+        return 1;
+    }
+    string pattern_02 = "\\b\\d+\\s\\d+\\/[1-9][0-9]*\\b";
+    regex fractionPattern_02(pattern_02);
+    check_02 = regex_match(value, fractionPattern_02);
+    if (check_02 == true) {
+        return 2;
+    }
+    string pattern_03 = "\\b\\d+\\b";
+    regex fractionPattern_03(pattern_03);
+    check_03 = regex_match(value, fractionPattern_03);
+    if (check_03 == true) {
+        return 3;
+    }
+    return -1;
 }

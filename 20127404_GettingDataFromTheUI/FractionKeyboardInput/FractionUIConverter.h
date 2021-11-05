@@ -3,8 +3,9 @@
 #include <sstream>
 #include <string>
 #include <tuple>
+#include <regex>
 #include "Fraction.h"
-//Chuyển đổi Phân số thành dạng Thập phân 
+//Fraction - To - Decimal
 class FractionToDecimalUIConverter {
 private:
     int _precision;
@@ -16,7 +17,7 @@ public:
 };
 
 
-//Chuyển đổi Phân số thành dạng Phần trăm
+//Fraction - To - Percentage
 class FractionToPercentageConverter {
 public:
     int _precision;
@@ -29,7 +30,7 @@ public:
     string convert(const Fraction& f);
 };
 
-//Chuyển đổi Phân Số thành dạng Chuỗi
+//Fraction - To - String
 class FractionToStringDataConverter {
 public:
     string convert(const Fraction& f);
@@ -43,11 +44,11 @@ public:
     bool tryConvertBack(string value, Fraction& f);
 
     // Check if you can parse a string into a fraction
-    bool isValidFormat(string value);
+    int isValidFormat(string value);
 };
 
 
-//Đưa ra dạng tối giản của phân số
+//Fraction - To - LowestTerm
 class FractionToLowestTermUIConverter {
 public:
     string convert(const Fraction& frac);

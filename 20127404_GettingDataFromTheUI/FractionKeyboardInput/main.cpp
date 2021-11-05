@@ -30,16 +30,25 @@ int main() {
 	input_string.setSize(n);
 	vector<Fraction> frac = input_string.enterString();
 
+
 	//Lưu vào file data.txt
-
-
-
+	FractionDataWriter output ("data.txt");
+	try {
+		output.writeDataToFile(frac);
+	}
+	catch (runtime_error ex) {
+		cout << ex.what() << endl;
+	}
 
 	//Tính tổng phân số nhập vào và xuất ra màn hình theo dạng tối giản
+	Fraction frac_total;
+	for (int i = 0; i < frac.size(); i++) {
+		frac_total.sum(frac_total, frac[i]);
+	}
+	FractionToLowestTermUIConverter converter;
+	string str_total = converter.convert(frac_total);
+	cout << endl << "Your total: " << str_total << endl;
 
-
-
-
-
+	cin.get();
 	return 0;
 }
