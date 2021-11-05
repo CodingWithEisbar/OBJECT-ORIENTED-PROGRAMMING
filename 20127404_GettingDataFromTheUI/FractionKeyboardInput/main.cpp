@@ -28,10 +28,15 @@ int main() {
 	//2. Tiến hành nhập vào các phân số 
 	StringToFractionUIInput input_string;
 	input_string.setSize(n);
-	vector<string> input_arr  = input_string.enterString();
+	vector<Fraction> frac = input_string.enterString();
 
-	//3. Xử lý các phân số nhập vào
-	vector<Fraction> validFrac;
+	//Lưu vào file data.txt
+
+
+
+
+	//Tính tổng phân số nhập vào và xuất ra màn hình theo dạng tối giản
+
 
 
 

@@ -8,7 +8,7 @@ void StringToFractionUIInput::setSize(int value)
 }
 
 vector<Fraction> StringToFractionUIInput::enterString() {
-	vector<Fraction> result;
+	vector<Fraction> frac;
 	FractionToStringDataConverter converter;
 	string buffer;
 	for (int i = 0; i < _n; i++) {
@@ -16,11 +16,9 @@ vector<Fraction> StringToFractionUIInput::enterString() {
 		getline(cin >> ws, buffer);
 		auto string_convert = converter.convertBack(buffer);
 		if (get<0>(string_convert)) {
-			result.push_back(get<3>(string_convert));
+			frac.push_back(get<3>(string_convert));
 		}
-
 		} while (!converter.isValidFormat(buffer));
-		
 	}
-	return result;
+	return frac;
 }

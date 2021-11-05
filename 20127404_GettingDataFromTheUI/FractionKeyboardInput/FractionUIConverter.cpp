@@ -129,6 +129,8 @@ bool FractionToStringDataConverter::tryConvertBack(string value, Fraction& f)
 
 bool FractionToStringDataConverter::isValidFormat(string value) {
     bool res = true;
+    //Kiểm tra hỗn số: \b\d+\s\d+\/[1-9][0-9]*\b
+    //Kiểm tra số bình thường: 
     string pattern = "\\b\\d+\\/[1-9][0-9]*\\b";
     regex fractionPattern(pattern);
     res = regex_match(value, fractionPattern);
