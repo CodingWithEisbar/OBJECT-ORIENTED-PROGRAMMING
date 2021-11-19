@@ -1,0 +1,8 @@
+thầy ơi cho em hỏi chứ năng của class TextDBcontext với DBset được không ạ?
+em chưa hiểu mục đích của nó là gì á thầy?
+
+- TextDBContext là ngữ cảnh chung, chứa tất cả các đối tượng quản lí, như đại tổng quản
+DBSet chiu trách nhiệm đọc file và tạo lại đối tượng
+
+Cái category trong product là con trỏ nhưng mà trong file .txt em thấy nó đâu có cần trỏ đến cái gì đâu Thầy
+- CatID chuyển thành con trỏ ref Cat em
