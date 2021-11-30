@@ -1,0 +1,11 @@
+Circle: Radius= 7.50687
+Circle: Radius= 4.26731
+Rectangle: Width= 7.03104, Height=7.54231
+Triangle: A= 3.24286, B=9.25632, C=3.70549
+Triangle: A= 9.81071, B=5.92747, C=6.57198
+Triangle: A= 6.31291, B=2.08599, C=6.61264
+Triangle: A= 3.21236, B=8.80934, C=9.73846
+Circle: Radius= 6.59148
+Rectangle: Width= 6.77253, Height=5.60412
+Triangle: A= 5.03626, B=7.92665, C=1.74478
+Rectangle: Width= 7.51758, Height=4.15165
