@@ -29,10 +29,7 @@ int main() {
 			RandomFloatGenerator _rfg;
 			Shape* _rec = new Rectangle();
 			_rec->setShapeCode(choice);
-			float width = _rfg.next(1, 10);
-			float height = _rfg.next(1, 10);
-			_rec->setWidth(width);
-			_rec->setHeight(height);
+			_rec->setRandomComponents(1, 10);
 			shared_ptr<Shape> p(_rec);
 			shape_collection.push_back(p);
 		}
@@ -40,12 +37,7 @@ int main() {
 			RandomFloatGenerator _rfg;
 			Shape* _tri = new Triangle();
 			_tri->setShapeCode(choice);
-			float a = _rfg.next(1, 10);
-			float b = _rfg.next(1, 10);
-			float c = _rfg.next(1, 10);
-			_tri->setA(a);
-			_tri->setB(b);
-			_tri->setC(c);
+			_tri->setRandomComponents(1, 10);
 			shared_ptr<Shape> p(_tri);
 			shape_collection.push_back(p);
 		}
@@ -53,8 +45,7 @@ int main() {
 			RandomFloatGenerator _rfg;
 			Shape* _cir = new Circle();
 			_cir->setShapeCode(choice);
-			float radius = _rfg.next(1, 10);
-			_cir->setRadius(radius);
+			_cir->setRandomComponents(1, 10);
 			shared_ptr<Shape> p(_cir);
 			shape_collection.push_back(p);
 		}

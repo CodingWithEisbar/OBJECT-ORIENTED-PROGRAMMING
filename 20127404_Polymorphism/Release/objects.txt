@@ -1,11 +1,12 @@
-Circle: Radius= 7.50687
-Circle: Radius= 4.26731
-Rectangle: Width= 7.03104, Height=7.54231
-Triangle: A= 3.24286, B=9.25632, C=3.70549
-Triangle: A= 9.81071, B=5.92747, C=6.57198
-Triangle: A= 6.31291, B=2.08599, C=6.61264
-Triangle: A= 3.21236, B=8.80934, C=9.73846
-Circle: Radius= 6.59148
-Rectangle: Width= 6.77253, Height=5.60412
-Triangle: A= 5.03626, B=7.92665, C=1.74478
-Rectangle: Width= 7.51758, Height=4.15165
+Circle: Radius= 1.04505
+Circle: Radius= 8.92885
+Rectangle: Width= 1.75934, Height=6.91896
+Rectangle: Width= 7.71264, Height=7.88462
+Rectangle: Width= 6.46703, Height=9.60192
+Rectangle: Width= 9.49093, Height=1.29258
+Circle: Radius= 9.11621
+Triangle: A= 9.78874, B=7.39341, C=6.29038
+Rectangle: Width= 5.33929, Height=3.43049
+Triangle: A= 2.9544, B=3.00055, C=1.94176
+Triangle: A= 5.59753, B=5.38901, C=3.08324
+Circle: Radius= 1.15412
