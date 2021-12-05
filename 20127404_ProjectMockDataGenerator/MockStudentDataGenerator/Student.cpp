@@ -1,7 +1,7 @@
 #include "Student.h"
 
-Student::Student(string ID, string fullName, double GPA, string phoneNumber,
-	string emailAddress, string DOB, string homeAddress)
+STUDENT::STUDENT(string ID, string fullName, double GPA, string phoneNumber,
+	string emailAddress, DATE DOB, string homeAddress)
 {
 	_ID = ID;
 	_fullName = fullName;
@@ -10,4 +10,11 @@ Student::Student(string ID, string fullName, double GPA, string phoneNumber,
 	_emailAddress = emailAddress;
 	_DOB = DOB;
 	_homeAddress = homeAddress;
+}
+
+void STUDENT::setStudentDOB(DATE DOB)
+{
+	this->_DOB.day = DOB.day;
+	this->_DOB.month = DOB.month;
+	this->_DOB.year = DOB.year;
 }

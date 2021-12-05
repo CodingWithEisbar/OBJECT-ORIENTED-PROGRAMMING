@@ -140,15 +140,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RandomFloatGenerator.cpp" />
     <ClCompile Include="RandomIntegerGenerator.cpp" />
+    <ClCompile Include="RandomStudentInformationGenerator.cpp" />
+    <ClCompile Include="ReadStudentData.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="supportStudentInputInfor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="students.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="RandomFloatGenerator.h" />
     <ClInclude Include="RandomIntegerGenerator.h" />
+    <ClInclude Include="RandomStudentInformationGenerator.h" />
+    <ClInclude Include="ReadStudentData.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="supportStudentInputInfor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

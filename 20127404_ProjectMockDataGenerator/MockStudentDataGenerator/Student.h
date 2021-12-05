@@ -1,28 +1,33 @@
 #ifndef _STUDENTS_H_
 #define _STUDENTS_H_
 
+#include <vector>
 #include <string>
 using namespace std;
 
-class Student {
+struct DATE {
+	int day, month, year;
+};
+
+class STUDENT {
 private:
 	string _ID;
 	string _fullName;
 	double _GPA;
 	string _phoneNumber;
 	string _emailAddress;
-	string _DOB;
+	DATE _DOB;
 	string _homeAddress;
 public:
-	Student() {}
-	Student(string, string, double, string, string, string, string);
+	STUDENT() {}
+	STUDENT(string, string, double, string, string, DATE, string);
 public:
 	string getStudentID() { return _ID; }
 	string getStudentFullName() { return _fullName; }
 	double getStudentGPA() { return _GPA; }
 	string getStudentPhoneNumber() { return _phoneNumber; }
 	string getStudentEmailAddress() { return _emailAddress; }
-	string getStudentDOB() { return _DOB; }
+	DATE getStudentDOB() { return _DOB; }
 	string getStudentHomeAddress() { return _homeAddress; }
 public:
 	void setStudentID(string ID) { _ID = ID; }
@@ -30,8 +35,9 @@ public:
 	void setStudentGPA(double GPA) { _GPA = GPA; }
 	void setStudentPhoneNumber(string phoneNumber) { _phoneNumber = phoneNumber; }
 	void setStudentEmailAddress(string emailAddress) { _emailAddress = emailAddress; }
-	void setStudentDOB(string DOB) { _DOB = DOB; }
+	void setStudentDOB(DATE DOB);
 	void setStudentHomeAddress(string homeAdderss) { _homeAddress = homeAdderss; }
+
 };
 
 
