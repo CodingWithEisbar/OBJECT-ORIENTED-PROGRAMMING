@@ -18,3 +18,14 @@ void STUDENT::setStudentDOB(DATE DOB)
 	this->_DOB.month = DOB.month;
 	this->_DOB.year = DOB.year;
 }
+
+double getStudentsAverageGPA(vector<STUDENT> data)
+{
+	double sum = 0;
+	for (int i = 0; i < data.size(); i++)
+	{
+		sum = sum + data[i].getStudentGPA();
+	}
+	double result = sum / (1.0 * data.size());
+	return result;
+}

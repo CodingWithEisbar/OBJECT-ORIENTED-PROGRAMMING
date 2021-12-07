@@ -17,15 +17,15 @@ public:
 	bool isValidStudentID(string);
 	bool isValidStudentPhoneNumber(string);
 	bool isValidStudentEmail(string);
+	bool isValidStudentGPA(string);
 	bool isValidDOBFormat(string);
 	bool isValidDateString(string);
 public:
 	//input student DOB support
 	string DOBToString(DATE DOB);
 	tuple<bool, int, string, DATE> stringToDOBCovertBack(string);
-
-	//input DOB support
-	tuple<bool, int, string, float> stringToFloat(string);
+	//input GPA support
+	tuple<bool, int, string, double> stringToGPA(string);
 
 };
 

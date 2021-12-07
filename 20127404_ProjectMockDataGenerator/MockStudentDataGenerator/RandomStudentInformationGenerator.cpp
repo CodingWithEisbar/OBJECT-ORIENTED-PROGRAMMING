@@ -13,8 +13,6 @@ bool isNumber(string buffer)
 	return result;
 }
 
-
-
 STUDENT RandomStudentGenerator::setRandomStudent()
 {
 	STUDENT student;

@@ -30,10 +30,13 @@
     <ClCompile Include="RandomFloatGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ReadStudentData.cpp">
+    <ClCompile Include="ReadStudentDataFromFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="supportStudentInputInfor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WriteStudentDataToFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -55,10 +58,13 @@
     <ClInclude Include="RandomFloatGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ReadStudentData.h">
+    <ClInclude Include="ReadStudentDataFromFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="supportStudentInputInfor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WriteStudentDataToFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

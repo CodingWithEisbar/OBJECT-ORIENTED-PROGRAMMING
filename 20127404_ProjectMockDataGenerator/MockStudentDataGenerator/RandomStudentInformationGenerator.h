@@ -46,12 +46,12 @@ private://Phone-number database ( 0 - 6 )
 public:
 	RandomStudentGenerator();
 public:
-	string setRandomID();
+	/*string setRandomID();
 	string setRandomName();
 	string setRandomAddress();
 	string setRandomPhoneNumber();
 	string setRandomDOB();
-	float setRandomGPA();
+	float setRandomGPA();*/
 public:
 	STUDENT setRandomStudent();
 };

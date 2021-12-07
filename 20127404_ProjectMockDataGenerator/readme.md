@@ -10,7 +10,8 @@
 
 # What I haven't done:
 
-# Something should be taken into account for bonus:
 
+# Something should be taken into account for bonus:
+* Support user for manual input new student.
 
 # Expected grade:
