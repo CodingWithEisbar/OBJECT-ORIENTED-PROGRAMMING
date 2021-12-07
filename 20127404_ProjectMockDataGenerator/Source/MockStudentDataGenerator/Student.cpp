@@ -5,7 +5,6 @@ STUDENT::STUDENT()
 	//Default constructor
 }
 
-
 STUDENT::STUDENT(string ID, string fullName, double GPA, string phoneNumber,
 	string emailAddress, DATE DOB, string homeAddress)
 {

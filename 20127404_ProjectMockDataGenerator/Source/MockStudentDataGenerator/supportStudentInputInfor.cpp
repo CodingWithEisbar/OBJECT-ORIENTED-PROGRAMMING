@@ -67,7 +67,7 @@ bool InputStudentInformation::isValidDateString(string value)
 
 bool InputStudentInformation::isValidStudentID(string ID)
 {
-	string ID_pattern = "\\b[0-9]\\d+\\b";
+	string ID_pattern = "\\b(\\d){8}\\b";
 	regex datePattern(ID_pattern);
 	bool checkDOB = regex_match(ID, datePattern);
 	return checkDOB;

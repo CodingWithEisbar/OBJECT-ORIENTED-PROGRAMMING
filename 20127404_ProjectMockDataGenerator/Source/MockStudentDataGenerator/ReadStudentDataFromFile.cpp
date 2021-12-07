@@ -1,21 +1,5 @@
 #include "ReadStudentDataFromFile.h"
 
-vector<string> spliter(string original, string delete_sample)
-{
-	vector<string> after_split;
-	unsigned long long start = 0;
-	unsigned long long end = original.find(delete_sample);
-	while (end != -1)
-	{
-		after_split.push_back(original.substr(start, end - start));
-		start = end + delete_sample.size();
-		end = original.find(delete_sample, start);
-	}
-	after_split.push_back(original.substr(start, end - start));
-	return after_split;
-}
-
-
 ReadStudentData::ReadStudentData(string connectionString)
 {
 	_connectionString = connectionString;

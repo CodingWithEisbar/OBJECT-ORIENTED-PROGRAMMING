@@ -19,9 +19,4 @@ public:
 	vector<STUDENT> getAll();
 }; 
 
-
-
-
-vector<string> spliter(string , string);
-
 #endif

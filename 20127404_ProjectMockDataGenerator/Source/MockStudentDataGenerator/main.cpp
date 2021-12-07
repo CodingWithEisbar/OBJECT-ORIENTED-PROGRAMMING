@@ -64,16 +64,17 @@ int main() {
 			STUDENT input_manual = inputStudent();
 			student_data.push_back(input_manual);
 			cout << endl << "\t- Student information input successfully! -";
+			file_save_flag = 0;
 		}
 		else if (choice == 4) //4. Calculate average GPA.
 		{
 			double averageGPA = getStudentsAverageGPA(student_data);
-			cout << endl << "Average GPA is: " << averageGPA;
+			cout << endl << "Average GPA is: " << averageGPA << endl;
 		}
 		else if (choice == 5) //5. Print out all the students that have a GPA greater than average GPA.
 		{
 			double averageGPA = getStudentsAverageGPA(student_data);
-			cout << endl << "List of students who have GPA greater than the average GPA: ";
+			cout << endl << "List of students who have GPA greater than the average GPA(" << averageGPA << "): ";
 			for (int i = 0; i < student_data.size(); i++)
 			{
 				if (student_data[i].getStudentGPA() > averageGPA)
@@ -83,6 +84,7 @@ int main() {
 						<< student_data[i].getStudentFullName() << ", GPA:" << student_data[i].getStudentGPA();
 				}
 			}
+			cout << endl;
 
 		}
 		else if (choice == 0) //0. Exit
