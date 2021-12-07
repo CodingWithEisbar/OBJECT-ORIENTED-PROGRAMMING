@@ -19,7 +19,7 @@ private:
 	DATE _DOB;
 	string _homeAddress;
 public:
-	STUDENT() {}
+	STUDENT();
 	STUDENT(string, string, double, string, string, DATE, string);
 public:
 	string getStudentID() { return _ID; }

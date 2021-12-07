@@ -16,17 +16,26 @@ void WriteStudentDataToFile::writeAll(vector<STUDENT> data)
 		throw runtime_error("Cannot open the file!!");
 		return;
 	}
-	for (int i = 0; i < data.size(); i++)
+	output << "Student: " << data[0].getStudentID() << " - " << data[0].getStudentFullName();
+	output << endl;
+	output << "\tGPA= " << data[0].getStudentGPA() << ", Telephone=" << data[0].getStudentPhoneNumber();
+	output << endl;
+	output << "\tEmail=" << data[0].getStudentEmailAddress();
+	output << endl;
+	output << "\tDOB=" << data[0].getStudentDOB().day << "/" << data[0].getStudentDOB().month << "/"<< data[0].getStudentDOB().year;
+	output << endl;
+	output << "\tAddress=" << data[0].getStudentHomeAddress();
+	for (int i = 1; i < data.size(); i++)
 	{
-		output << "Student: " << data[i].getStudentID() << " - " << data[i].getStudentFullName();
+		output << endl << "Student: " << data[i].getStudentID() << " - " << data[i].getStudentFullName();
 		output << endl;
-		output << "GPA= " << data[i].getStudentGPA() << ", Telephone=" << data[i].getStudentPhoneNumber();
+		output << "\tGPA= " << data[i].getStudentGPA() << ", Telephone=" << data[i].getStudentPhoneNumber();
 		output << endl;
-		output << "Email=" << data[i].getStudentEmailAddress();
+		output << "\tEmail=" << data[i].getStudentEmailAddress();
 		output << endl;
-		output << "DOB=" << data[i].getStudentDOB().day << "/" << data[i].getStudentDOB().month << "/"<< data[i].getStudentDOB().year;
+		output << "\tDOB=" << data[i].getStudentDOB().day << "/" << data[i].getStudentDOB().month << "/" << data[i].getStudentDOB().year;
 		output << endl;
-		output << "Address=" << data[i].getStudentHomeAddress();
+		output << "\tAddress=" << data[i].getStudentHomeAddress();
 	}
 	output.close();
 }

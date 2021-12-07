@@ -4,12 +4,9 @@
 
 #include <string>
 #include <vector>
-#include <regex>
-#include <tuple>
 #include <fstream>
 #include <sstream>
 
-#include "Student.h"
 #include "supportStudentInputInfor.h"
 using namespace std;
 
@@ -20,7 +17,10 @@ public:
 	ReadStudentData(string);
 public: 
 	vector<STUDENT> getAll();
-};
+}; 
+
+
+
 
 vector<string> spliter(string , string);
 

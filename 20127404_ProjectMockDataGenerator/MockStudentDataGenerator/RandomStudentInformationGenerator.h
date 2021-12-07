@@ -29,7 +29,7 @@ private: //Address database
 								"Le Cao Lang", "Tran Quang Co",  "Hien Vuong",
 								//Phường Bến Nghé, Quận 1 ( 17 - 25 )
 								"Ton Duc Thang", "Nguyen Du", "Hai Ba Trung", "Le Thanh Ton", "Le Duan",
-								"Ly Tu Trong", "Thi Sach", "Cao Ba Quat", "Dong Khoi"
+								"Ly Tu Trong", "Thi Sach", "Cao Ba Quat", "Dong Khoi",
 								//Phường 1 Quận 3 ( 26 - 29 )
 								"Dien Bien Phu", "Nguyen Thien Thuat", "Ly Thai To", "Nguyen Dinh Chieu"
 	};
@@ -53,6 +53,7 @@ public:
 	string setRandomDOB();
 	float setRandomGPA();*/
 public:
+	string lowerCaseLastName(string);
 	STUDENT setRandomStudent();
 };
 

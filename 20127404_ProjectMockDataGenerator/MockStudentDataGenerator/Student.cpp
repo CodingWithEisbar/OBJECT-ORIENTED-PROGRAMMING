@@ -1,15 +1,21 @@
 #include "Student.h"
 
+STUDENT::STUDENT() 
+{
+	//Default constructor
+}
+
+
 STUDENT::STUDENT(string ID, string fullName, double GPA, string phoneNumber,
 	string emailAddress, DATE DOB, string homeAddress)
 {
-	_ID = ID;
-	_fullName = fullName;
-	_GPA = GPA;
-	_phoneNumber = phoneNumber;
-	_emailAddress = emailAddress;
-	_DOB = DOB;
-	_homeAddress = homeAddress;
+	this->_ID = ID;
+	this->_fullName = fullName;
+	this->_GPA = GPA;
+	this->_phoneNumber = phoneNumber;
+	this->_emailAddress = emailAddress;
+	this->_DOB = DOB;
+	this->_homeAddress = homeAddress;
 }
 
 void STUDENT::setStudentDOB(DATE DOB)

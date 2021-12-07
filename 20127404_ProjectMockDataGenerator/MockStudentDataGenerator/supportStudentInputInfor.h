@@ -1,6 +1,7 @@
 #ifndef _STUDENTINPUTINFORMATION_H_
 #define _STUDENTINPUTINFORMATION_H_
 
+#include <iostream>
 #include <sstream>
 #include <regex>
 #include <tuple>
@@ -24,12 +25,11 @@ public:
 	//input student DOB support
 	string DOBToString(DATE DOB);
 	tuple<bool, int, string, DATE> stringToDOBCovertBack(string);
-	//input GPA support
-	tuple<bool, int, string, double> stringToGPA(string);
-
+	/*tuple<bool, int, string, double> stringToGPAConvertBack(string);*/
+	string phoneNumberCorrectedFormat(string);
 };
 
-
+STUDENT inputStudent();
 
 
 #endif
