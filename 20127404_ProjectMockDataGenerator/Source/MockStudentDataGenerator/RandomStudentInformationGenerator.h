@@ -10,6 +10,12 @@
 #include "RandomFloatGenerator.h"
 #include "supportStudentInputInfor.h"
 
+//Stuff
+
+//Check Ward or District value if it is number we'll put it after District/Ward
+//Ex: Ward 5, District 3,...
+bool isNumber(string buffer);
+
 
 class RandomStudentGenerator {
 private:
@@ -36,28 +42,14 @@ private: //Address database
 	vector<string> _ward = { "4", "10", "Phu Thanh", "Ben Nghe", "1"};
 	vector<string> _district{ "5", "Tan Phu", "1", "3"};
 	vector<string> _city = { "Ho Chi Minh City" };
-//private://DOB database
-//	vector<int> _day = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-//						21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31 };
-//	vector<int> _month = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
-//	vector<int> _year = { 1999, 2000, 2001, 2002 };
+
 private://Phone-number database ( 0 - 6 )
 	vector<string> _providerCode = { "086", "096", "088", "089", "090", "079", "093" };
 public:
 	RandomStudentGenerator();
 public:
-	/*string setRandomID();
-	string setRandomName();
-	string setRandomAddress();
-	string setRandomPhoneNumber();
-	string setRandomDOB();
-	float setRandomGPA();*/
-public:
 	string lowerCaseLastName(string);
 	STUDENT setRandomStudent();
 };
-
-
-bool isNumber(string buffer);
 
 #endif

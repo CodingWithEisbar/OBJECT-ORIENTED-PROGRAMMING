@@ -11,6 +11,7 @@ using namespace std;
 
 //Stuff
 int maxDayDeterminator(DATE date);
+STUDENT inputStudent();
 
 
 class InputStudentInformation {
@@ -24,12 +25,10 @@ public:
 public:
 	//input student DOB support
 	string DOBToString(DATE DOB);
-	tuple<bool, int, string, DATE> stringToDOBCovertBack(string);
-	/*tuple<bool, int, string, double> stringToGPAConvertBack(string);*/
+	tuple<bool, int, string, DATE> stringToDOBConvertBack(string);
 	string phoneNumberCorrectedFormat(string);
 };
 
-STUDENT inputStudent();
 
 
 #endif

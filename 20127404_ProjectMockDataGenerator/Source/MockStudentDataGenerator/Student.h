@@ -9,6 +9,9 @@ struct DATE {
 	int day, month, year;
 };
 
+//Stuff
+double getStudentsAverageGPA(vector<STUDENT> data);
+
 class STUDENT {
 private:
 	string _ID;
@@ -41,7 +44,6 @@ public:
 };
 
 
-double getStudentsAverageGPA(vector<STUDENT> data);
 
 
 #endif 

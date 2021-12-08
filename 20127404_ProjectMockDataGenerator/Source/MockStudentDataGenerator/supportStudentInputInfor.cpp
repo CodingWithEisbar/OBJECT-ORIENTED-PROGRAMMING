@@ -106,7 +106,7 @@ string InputStudentInformation::DOBToString(DATE sample)
 	return result;
 }
 
-tuple<bool, int, string, DATE> InputStudentInformation::stringToDOBCovertBack(string buffer)
+tuple<bool, int, string, DATE> InputStudentInformation::stringToDOBConvertBack(string buffer)
 {
 	bool succeeded = true;
 	int error_code_value = 0;
@@ -205,7 +205,7 @@ STUDENT inputStudent()
 	double GPA = stod(input_GPA);
 
 	//convert DOB from string to struct DATE;
-	auto getDOBValue = _support.stringToDOBCovertBack(input_DOB);
+	auto getDOBValue = _support.stringToDOBConvertBack(input_DOB);
 	DATE DOB = get<3>(getDOBValue);
 
 	//Corrected format for student phone number

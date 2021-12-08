@@ -47,7 +47,7 @@ vector<STUDENT> ReadStudentData::getAll()
 			stu_address = buffer.substr(buffer.find_first_of("=") + 1, buffer.size() - 1);
 			
 			//Convert DOB to struct DATE
-			auto convert_DOB = _support.stringToDOBCovertBack(stu_dob);
+			auto convert_DOB = _support.stringToDOBConvertBack(stu_dob);
 			DATE DOB = get<3>(convert_DOB);
 			//Convert GPA to double
 			double GPA = stod(stu_gpa);
