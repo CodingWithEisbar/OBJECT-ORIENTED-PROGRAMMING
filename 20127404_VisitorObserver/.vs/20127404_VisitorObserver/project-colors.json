@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2afe9d83-6d96-441d-a877-ec0be219eff3": {
+      "ProjectGuid": "2afe9d83-6d96-441d-a877-ec0be219eff3",
+      "DisplayName": "StrategyGame",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

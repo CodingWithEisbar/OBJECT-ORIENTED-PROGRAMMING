@@ -1,0 +1,86 @@
+﻿  game.cpp
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(16,7): error C2143: syntax error: missing ';' before '*'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(16,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(16,15): error C2238: unexpected token(s) preceding ';'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(22,16): error C2061: syntax error: identifier 'STATE'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(34,22): error C2061: syntax error: identifier 'SWORDMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(35,22): error C2061: syntax error: identifier 'KNIGHT'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(35,30): error C2535: 'void IVisitable::attack(void)': member function already defined or declared
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(34): message : see declaration of 'IVisitable::attack'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(36,22): error C2061: syntax error: identifier 'PIKEMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(36,31): error C2535: 'void IVisitable::attack(void)': member function already defined or declared
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(34): message : see declaration of 'IVisitable::attack'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(37,21): error C2061: syntax error: identifier 'SWORDMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(38,21): error C2061: syntax error: identifier 'KNIGHT'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(38,29): error C2535: 'void IVisitable::hitBy(void)': member function already defined or declared
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(37): message : see declaration of 'IVisitable::hitBy'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(39,21): error C2061: syntax error: identifier 'PIKEMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(39,30): error C2535: 'void IVisitable::hitBy(void)': member function already defined or declared
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(37): message : see declaration of 'IVisitable::hitBy'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(49,14): error C2061: syntax error: identifier 'KNIGHT'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(50,14): error C2061: syntax error: identifier 'PIKEMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(50,23): error C2535: 'void SWORDMAN::attack(void)': member function already defined or declared
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(49): message : see declaration of 'SWORDMAN::attack'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(52,13): error C2061: syntax error: identifier 'KNIGHT'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(53,13): error C2061: syntax error: identifier 'PIKEMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(53,22): error C2535: 'void SWORDMAN::hitBy(void)': member function already defined or declared
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(52): message : see declaration of 'SWORDMAN::hitBy'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(63,14): error C2061: syntax error: identifier 'PIKEMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(66,13): error C2061: syntax error: identifier 'PIKEMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(126,20): error C2065: 'RULE': undeclared identifier
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(126,9): error C2923: 'std::shared_ptr': 'RULE' is not a valid template type argument for parameter '_Ty'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(126): message : see declaration of 'RULE'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(126,9): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.cpp(10,2): error C2065: '_state': undeclared identifier
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.cpp(13,30): error C2065: '_state': undeclared identifier
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.cpp(14,31): error C2065: '_state': undeclared identifier
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.cpp(15,31): error C2065: '_state': undeclared identifier
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.cpp(20,40): error C2511: 'void CHARACTER::setState(STATE *)': overloaded member function not found in 'CHARACTER'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(11): message : see declaration of 'CHARACTER'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.cpp(20,42): error C2065: '_state': undeclared identifier
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.cpp(45,1): error C2511: 'void SWORDMAN::attack(KNIGHT &)': overloaded member function not found in 'SWORDMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(43): message : see declaration of 'SWORDMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.cpp(46,18): error C2671: 'SWORDMAN::attack': static member functions do not have 'this' pointers
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.cpp(49,17): error C2665: 'SWORDMAN::hitBy': none of the 2 overloads could convert all the argument types
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(51,7): message : could be 'void SWORDMAN::hitBy(SWORDMAN &)'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.cpp(49,17): message : while trying to match the argument list '(KNIGHT)'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.cpp(54,1): error C2511: 'void SWORDMAN::attack(PIKEMAN &)': overloaded member function not found in 'SWORDMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(43): message : see declaration of 'SWORDMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.cpp(55,18): error C2671: 'SWORDMAN::attack': static member functions do not have 'this' pointers
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.cpp(58,17): error C2665: 'SWORDMAN::hitBy': none of the 2 overloads could convert all the argument types
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(51,7): message : could be 'void SWORDMAN::hitBy(SWORDMAN &)'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.cpp(58,17): message : while trying to match the argument list '(PIKEMAN)'
+  main.cpp
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(16,7): error C2143: syntax error: missing ';' before '*'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(16,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(16,15): error C2238: unexpected token(s) preceding ';'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(22,16): error C2061: syntax error: identifier 'STATE'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(34,22): error C2061: syntax error: identifier 'SWORDMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(35,22): error C2061: syntax error: identifier 'KNIGHT'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(35,30): error C2535: 'void IVisitable::attack(void)': member function already defined or declared
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(34): message : see declaration of 'IVisitable::attack'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(36,22): error C2061: syntax error: identifier 'PIKEMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(36,31): error C2535: 'void IVisitable::attack(void)': member function already defined or declared
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(34): message : see declaration of 'IVisitable::attack'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(37,21): error C2061: syntax error: identifier 'SWORDMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(38,21): error C2061: syntax error: identifier 'KNIGHT'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(38,29): error C2535: 'void IVisitable::hitBy(void)': member function already defined or declared
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(37): message : see declaration of 'IVisitable::hitBy'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(39,21): error C2061: syntax error: identifier 'PIKEMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(39,30): error C2535: 'void IVisitable::hitBy(void)': member function already defined or declared
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(37): message : see declaration of 'IVisitable::hitBy'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(49,14): error C2061: syntax error: identifier 'KNIGHT'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(50,14): error C2061: syntax error: identifier 'PIKEMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(50,23): error C2535: 'void SWORDMAN::attack(void)': member function already defined or declared
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(49): message : see declaration of 'SWORDMAN::attack'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(52,13): error C2061: syntax error: identifier 'KNIGHT'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(53,13): error C2061: syntax error: identifier 'PIKEMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(53,22): error C2535: 'void SWORDMAN::hitBy(void)': member function already defined or declared
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(52): message : see declaration of 'SWORDMAN::hitBy'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(63,14): error C2061: syntax error: identifier 'PIKEMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(66,13): error C2061: syntax error: identifier 'PIKEMAN'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(126,20): error C2065: 'RULE': undeclared identifier
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(126,9): error C2923: 'std::shared_ptr': 'RULE' is not a valid template type argument for parameter '_Ty'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(126): message : see declaration of 'RULE'
+D:\Bài tập lập trình\OOP - Lập trình hướng đối tượng\20127404_VisitorObserver\StrategyGame\game.h(126,9): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+  Generating Code...
