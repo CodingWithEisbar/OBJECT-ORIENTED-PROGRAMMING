@@ -1,4 +1,4 @@
-#include "RandomIntegerGenerator.h"
+#include "randomIntegerGenerator.h"
 
 RandomIntegerGenerator::RandomIntegerGenerator() {
 	srand(time(NULL)); 
