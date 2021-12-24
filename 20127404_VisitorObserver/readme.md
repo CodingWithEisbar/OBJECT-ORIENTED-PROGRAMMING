@@ -8,7 +8,7 @@
 * Print out the result after 3 turns.
 
 ## What I haven't done:
-* Not divide the source code into multi files so it was little bit harder to check and fixed bugs.
+* Not divide the source code into multi files so it was little bit harder to check and fix bugs.
 
 ## About this program:
 * Coding language: C++ 20
